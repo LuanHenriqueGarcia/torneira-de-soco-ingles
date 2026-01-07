@@ -1,4 +1,4 @@
-# 🥊 Torneira de Soco Inglês
+#  Torneira de Soco Inglês
 
 **Offensive Security Toolkit** - Uma suíte modular de pentest desenvolvida em Go para testes de segurança.
 
