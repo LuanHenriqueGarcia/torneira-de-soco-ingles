@@ -124,9 +124,9 @@ func runScan() {
 
 	sort.Ints(openPorts)
 
-	internal.PrintInfo("═══════════════════════════════════════════════")
+	internal.PrintInfo("===============================================")
 	internal.PrintInfo("  RESULTADO DO SCAN")
-	internal.PrintInfo("═══════════════════════════════════════════════")
+	internal.PrintInfo("===============================================")
 	internal.PrintInfo("Host: %s", scanTarget)
 	internal.PrintInfo("Tempo: %v", elapsed)
 	internal.PrintInfo("Portas escaneadas: %d", len(ports))

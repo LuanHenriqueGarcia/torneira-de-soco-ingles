@@ -154,11 +154,11 @@ func runBruteForce() {
 				if success {
 					atomic.StoreInt32(&found, 1)
 					fmt.Println()
-					internal.PrintSuccess("═══════════════════════════════════════════════")
+					internal.PrintSuccess("===============================================")
 					internal.PrintSuccess("  CREDENCIAL ENCONTRADA!")
-					internal.PrintSuccess("  Usuário: %s", cred.Username)
+					internal.PrintSuccess("  Usuario: %s", cred.Username)
 					internal.PrintSuccess("  Senha: %s", cred.Password)
-					internal.PrintSuccess("═══════════════════════════════════════════════")
+					internal.PrintSuccess("===============================================")
 				} else if bruteVerbose {
 					fmt.Printf("\r[*] Testando: %s:%s [%d/%d]", cred.Username, cred.Password, current, total)
 				} else {

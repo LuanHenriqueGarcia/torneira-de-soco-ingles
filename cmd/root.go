@@ -10,21 +10,21 @@ import (
 
 var rootCmd = &cobra.Command{
 	Use:   "skynet",
-	Short: "Skynet Offensive Toolkit - Torneira de Soco Inglês",
+	Short: "Skynet Offensive Toolkit - Torneira de Soco Ingles",
 	Long: `
-╔═══════════════════════════════════════════════════════════════╗
-║                TORNEIRA DE SOCO INGLÊS                        ║
-║                   Offensive Security Toolkit                  ║
-╚═══════════════════════════════════════════════════════════════╝
++===============================================================+
+|                TORNEIRA DE SOCO INGLES                        |
+|                   Offensive Security Toolkit                  |
++===============================================================+
 
-Uma suíte modular de pentest desenvolvida para testes de segurança
-com velocidade e precisão.
+Uma suite modular de pentest desenvolvida para testes de seguranca
+com velocidade e precisao.
 
-Módulos disponíveis:
+Modulos disponiveis:
   scan    - Scanner de portas TCP
-  enum    - Enumeração de diretórios e subdomínios
-  brute   - Força bruta em formulários de login
-  fuzz    - Fuzzing de parâmetros e vulnerabilidades
+  enum    - Enumeracao de diretorios e subdominios
+  brute   - Forca bruta em formularios de login
+  fuzz    - Fuzzing de parametros e vulnerabilidades
   exploit - Teste de vulnerabilidades conhecidas
 
 Exemplos:
@@ -34,7 +34,7 @@ Exemplos:
   skynet fuzz -t "http://target.com/page?id=FUZZ" --payload sqli
   skynet exploit -t "http://target.com/page?id=1" --type sqli
 
-  Use apenas em sistemas que você tem autorização para testar!`,
+  Use apenas em sistemas que voce tem autorizacao para testar!`,
 	Run: func(cmd *cobra.Command, args []string) {
 		internal.PrintBanner()
 		cmd.Help()
